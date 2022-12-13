@@ -1,23 +1,21 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld'
-import Phrase from './components/Phrase';
-import SayMyName from './components/SayMyName';
-
+import HomeScreen from './components/HomeScreen';
+//import Conditional from './components/Conditional';
+import OtherList from './components/OherList';
+//import Event from './components/Event';
+//import Form from './components/Form';
 
 function App() {
 
+    const myItems = ['react', 'JavaScript', 'HTML', 'CSS']
 
   return (
     <div className="App">
-      <h1>Hi React</h1>
-      <p>This is my first project</p>
-      <p>Hello World</p>
-      <SayMyName name={name} photo={url}/>
-      <p>{name}</p>
-      <img src={url} alt='test' />
-    
-      <HelloWorld/>
-      <Phrase />
+      <h1>Lists render</h1>
+      <OtherList items={myItems}/>
+      <h1>Lists render 2</h1>
+      <OtherList items={[]} />
+      <HomeScreen />
     </div>
 
   );
