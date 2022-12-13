@@ -6,8 +6,6 @@ import SayMyName from './components/SayMyName';
 
 function App() {
 
-  const name = 'Hugo';
-  const url = 'https://via.placeholder.com/500';
 
   return (
     <div className="App">
@@ -23,7 +21,6 @@ function App() {
     </div>
 
   );
-
 
 }
 
